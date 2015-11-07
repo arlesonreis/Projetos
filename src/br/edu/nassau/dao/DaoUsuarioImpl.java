@@ -23,7 +23,7 @@ public class DaoUsuarioImpl extends GenericDao implements DaoUsuario {
 			st = conn.prepareStatement(sql);
 			st.setString(1, usuario.getNome());
 			st.setString(2, usuario.getSobrenome());
-			st.setString(3, usuario.getFuncao());
+			st.setInt(3, usuario.getFuncao());
 			st.setString(4, usuario.getEmail());
 			st.setString(5, usuario.getSenha());
 
@@ -49,7 +49,7 @@ public class DaoUsuarioImpl extends GenericDao implements DaoUsuario {
 			st = conn.prepareStatement(sql);
 			st.setString(1, usuario.getNome());
 			st.setString(2, usuario.getSobrenome());
-			st.setString(3, usuario.getFuncao());
+			st.setInt(3, usuario.getFuncao());
 			st.setString(4, usuario.getEmail());
 			st.setString(5, usuario.getSenha());
 			st.setInt(6, usuario.getId());
@@ -129,7 +129,7 @@ public class DaoUsuarioImpl extends GenericDao implements DaoUsuario {
 				usuario.setId(rs.getInt(1));
 				usuario.setNome(rs.getString(2));
 				usuario.setSobrenome(rs.getString(3));
-				usuario.setFuncao(rs.getString(4));
+				usuario.setFuncao(rs.getInt(4));
 				usuario.setEmail(rs.getString(5));
 				usuario.setSenha(rs.getString(6));
 				lista.add(usuario);

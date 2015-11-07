@@ -5,7 +5,7 @@ public class Usuario {
 	private int id;
 	private String nome;
 	private String sobrenome;
-	private String funcao;
+	private int funcao;
 	private String email;
 	private String senha;
 
@@ -33,11 +33,11 @@ public class Usuario {
 		this.sobrenome = sobrenome;
 	}
 
-	public String getFuncao() {
+	public int getFuncao() {
 		return funcao;
 	}
 
-	public void setFuncao(String funcao) {
+	public void setFuncao(int funcao) {
 		this.funcao = funcao;
 	}
 

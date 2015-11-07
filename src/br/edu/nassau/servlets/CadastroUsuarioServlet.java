@@ -54,7 +54,7 @@ public class CadastroUsuarioServlet extends HttpServlet {
 		//Integer id = Integer.valueOf(request.getParameter("id"));
 		String nome = request.getParameter("nome");
 		String sobrenome = request.getParameter("sobrenome");
-		String funcao = request.getParameter("funcao");
+		Integer funcao = Integer.valueOf(request.getParameter("funcao"));
 		String email = request.getParameter("email");
 		String senha = request.getParameter("senha");
 		

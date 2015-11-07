@@ -14,7 +14,7 @@ public class MainTest {
 		u.setId(1);
 		u.setNome("sasda");
 		u.setSobrenome("asdsadf");
-		u.setFuncao("sdasd");
+		u.setFuncao(1);
 		u.setEmail("sadsafd");
 		u.setSenha("sadasdf");
 		

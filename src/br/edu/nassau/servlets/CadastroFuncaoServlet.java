@@ -20,7 +20,7 @@ import br.edu.nassau.modelo.Projeto;
 @WebServlet("/CadastroFuncaoServlet")
 public class CadastroFuncaoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private DaoFuncaoImpl DaoFuncao;
+	private DaoFuncaoImpl daoFuncao;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -34,7 +34,7 @@ public class CadastroFuncaoServlet extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
     	// TODO Auto-generated method stub
     	super.init(config);
-    	DaoFuncao = new DaoFuncaoImpl();
+    	daoFuncao = new DaoFuncaoImpl();
     }
 
 	/**
@@ -61,7 +61,7 @@ public class CadastroFuncaoServlet extends HttpServlet {
 		
 		
 		try {
-			DaoFuncao.save(fu);
+			daoFuncao.save(fu);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
